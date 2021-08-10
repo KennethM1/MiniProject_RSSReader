@@ -1,0 +1,262 @@
+.parentdiv {
+  background-image: url("/images/bluebackground.jpg");
+  background-color: teal;
+  margin: 50px;
+  box-shadow: 2px 2px 10px;
+}
+.leftfloat {
+  background-color: lavenderblush;
+  width: 50%;
+  /* float: left; */
+}
+.rightfloat {
+  background-color: lavenderblush;
+  /* width: 50%; */
+  /* float: right; */
+}
+h1 {
+  text-align: center;
+}
+.header {
+  border: solid 2px rgba(94, 94, 173, 0.664);
+  margin: -9px;
+  background-color: rgba(94, 94, 173, 0.664);
+  border-radius: 2px;
+}
+.header:hover {
+  border-color: crimson;
+}
+.welcome {
+  text-align: left;
+}
+.form1 {
+  background-color: whitesmoke;
+  /* vertical-align:text-top; */
+  /* margin-right: 40%; */
+  /* border:solid 2px red; */
+  padding: 90px;
+  /* margin-right: 900px; */
+  text-align: center;
+  /* border-radius: 5px; */
+}
+/* label{
+    display: inline-block;
+    border: brown 2px solid;
+    padding: 3px;} */
+
+/* input[type="text"]{
+position: relative;
+left: 0px;
+width: 195px;
+height: 50px;
+border: none;
+/* border-bottom: black solid 2px; 
+border-radius: 2px;
+font-size:15px;
+text-align:left;
+box-shadow: 2px 1px 8px gray;
+transition: width 0.7s;
+color: brown;
+position:sticky;  not sure if this is working but leaving to see effects. Type email is normal
+padding: 0px 10px 0px;
+
+} */
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+input[type="date"] {
+  /* vertical-align: text-top; */
+  width: 350px;
+  height: 50px;
+  border: none;
+  /* border-bottom: black solid 2px; */
+  border-radius: 2px;
+  font-size: 15px;
+  box-shadow: 2px 1px 8px gray;
+  transition: width 0.7s;
+  margin-top: 9px;
+  padding: 0px 10px 0px;
+  color: gray;
+}
+
+input[type="text"]:hover,
+input[type="password"]:hover,
+input[type="tel"]:hover,
+input[type="date"]:hover,
+input[type="email"]:hover {
+  /* vertcal-align: text-top; */
+  /* text-align: center; */
+  color: gray;
+  width: 375px;
+  /* margin-top: 20px; */
+  transition-timing-function: ease-in-out;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="tel"]:focus,
+input[type="date"]:focus,
+input[type="email"]:focus {
+  /* vertical-align:bottom; */
+  outline: none;
+  border: rgb(106, 106, 245) solid 2px;
+  border-radius: 2px;
+  height: 50px;
+  width: 390px;
+  box-shadow: none;
+}
+/* input[type="email"]:focus{
+vertical-align:bottom;
+border: none;
+outline: none;
+border: rgb(106, 106, 245) solid 2px;
+border-radius: 2px;
+height: 50px;
+width: 225px;
+box-shadow: none;
+} */
+
+::placeholder {
+  /* border: black solid 1px; */
+  vertical-align: middle;
+  position: sticky;
+  color: gray;
+  margin-left: 20px;
+  text-transform: uppercase;
+}
+
+.checkbox {
+  /* text-align: right; */
+  /* border: 1px red solid; */
+  margin-top: 10px;
+  margin-left: 100px;
+  padding-left: 0px;
+  width: 225px;
+  font-size: 14px;
+  /* height: 10px;
+    width: 5px;*/
+}
+.checkbox label {
+  /* color: teal; */
+  position: relative;
+  /* border: thin red solid; */
+}
+
+.btn {
+  border-radius: 20px;
+  width: 150px;
+  height: 40px;
+  background-image: linear-gradient(
+    to left,
+    rgb(11, 236, 169),
+    rgb(0, 174, 255)
+  );
+  color: white;
+  box-shadow: 8px 5px 10px gray;
+  border: 0.1px solid white;
+  text-transform: uppercase;
+  font-weight: 400;
+  border: none;
+  transition: 0.8s;
+}
+.btn:hover {
+  border-radius: 20px;
+  width: 150px;
+  height: 40px;
+  background-image: linear-gradient(
+    to left,
+    rgb(11, 236, 169),
+    rgb(0, 174, 255)
+  );
+  color: white;
+  box-shadow: none;
+  border: 0.1px solid white;
+  text-transform: uppercase;
+  font-weight: 400;
+  border: none;
+  transition: 0;
+}
+.btn:focus {
+  border-radius: 20px;
+  width: 150px;
+  height: 40px;
+  background-image: linear-gradient(
+    to left,
+    rgb(11, 236, 169),
+    rgb(0, 174, 255)
+  );
+  color: white;
+  box-shadow: 8px 5px 10px gray;
+  border: 0.1px solid white;
+  text-transform: uppercase;
+  font-weight: 400;
+  border: none;
+  transition: all;
+}
+
+.btndiv {
+  float: left;
+  margin-left: 20px;
+  /* border: solid black 2px; */
+}
+
+h2 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: 2000;
+  font-size: 30px;
+  text-shadow: 2px 2px 2px gray;
+  /* border: solid black 1px; */
+  padding-right: 20px;
+  margin-left: 0px; /* might need to just make this a table*/
+  margin-bottom: -12px;
+}
+p {
+  /* border: solid 2px black; */
+  text-align: left;
+  margin-left: 31px;
+  /* margin-bottom: 31px; */
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.sweet {
+  border: none;
+  box-shadow: 1px 5px 2px 1px gray;
+  border-radius: 150px;
+  margin-top: -5px;
+
+  margin-bottom: 0px;
+  margin-right: -118px;
+  /* margin-top:-500px;  */
+}
+.google {
+  /* border: black solid 2px; */
+  box-shadow: 1px 5px 2px 1px gray;
+  border-radius: 12px;
+  margin-top: -1px;
+  margin-left: 1px;
+  margin-right: 15px;
+  padding: 10px;
+  background-color: white;
+  float: ;
+}
+.googlediv {
+  /* border: solid red 2px; */
+  padding-left: 0px;
+}
+.or {
+  position: absolute;
+  margin-left: 200px;
+  margin-bottom: 20px;
+  /* vertical-align: text-top; */
+  /* border: 2px solid black; */
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: rgba(128, 128, 128, 0.651);
+  font-weight: bold;
+}
+
+/* td{
+    text-align: right;
+    border: black solid 1px;
+} */

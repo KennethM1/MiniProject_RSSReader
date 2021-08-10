@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        RSS Reader Project
+    </title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
+
+</head>
+
+</head>
+
+
+<body>
+    <div class="parentdiv">
+        <div class="leftfloat">
+
+
+            <div class="form1">
+                <form action="" autocomplete="off">
+                    <h2>Search Your Favorite RSS Feed</h2>
+                    <p>Please enter the feed below</p>
+
+                    <div class="full-input">
+
+                        <input type="text" name="name" id="name" placeholder="RSS Feed Search" autocomplete="off"
+                            required>
+
+                    </div>
+                    <div class="btndiv">
+                        <button id="btn" class="btn">Find My Feed</button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+
+    </div>
+    <div class="rightfloat" id="results">
+
+    </div>
+
+
+
+    <script>
+
+        btn.addEventListener("click", () => {
+            let userinput = document.getElementById("name").value
+
+            let textarea = document.getElementById('results')
+            let url = userinput;
+            alert(userinput)
+            alert(url)
+            feednami.load(url)
+                .then(feed => {
+                    textarea.value = ''
+                    console.log(feed)
+                    console.log(userinput)
+
+
+                    let data = "<table class='table table-bordered table-striped'><thead class='thead-dark'><tr><th>Title</th><th>Description</th><th>Link</th></tr></thead>";
+                    feed.entries.forEach(element => {
+                        data = data + "<tr><td>" + element.title + "</td>"
+                        data = data + "<td>" + element.description + "</td>"
+                        data = data + "<td><a href=" + element.link + ">" + "link" + "</a></td></tr>"
+                    });
+                    data = data + "</table>"
+                    document.getElementById("results").innerHTML = data;
+                    for (let entry of feed.entries) {
+                        textarea.value += `${entry.title}\n${entry.link}\n\n`
+                    }
+                })
+        })
+    </script>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://static.sekandocdn.net/static/feednami/feednami-client-v1.1.js"></script>
+
+</body>
+
+</html>
