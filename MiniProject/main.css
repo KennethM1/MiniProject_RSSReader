@@ -6,7 +6,7 @@
 }
 .leftfloat {
   background-color: lavenderblush;
-  width: 50%;
+  /* width: 50%; */
   /* float: left; */
 }
 .rightfloat {
@@ -197,8 +197,9 @@ box-shadow: none;
 }
 
 .btndiv {
-  float: left;
+  /* float: left; */
   margin-left: 20px;
+  padding-top: 2%;
   /* border: solid black 2px; */
 }
 
@@ -214,7 +215,7 @@ h2 {
 }
 p {
   /* border: solid 2px black; */
-  text-align: left;
+  /* text-align: left; */
   margin-left: 31px;
   /* margin-bottom: 31px; */
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
